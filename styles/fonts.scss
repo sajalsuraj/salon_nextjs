@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "PoppinsLight";
+  src: local("PoppinsLight"), url(/font/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: local("PoppinsBold"), url(/font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "PoppinsRegular";
+  src: local("PoppinsRegular"), url(/font/Poppins-Regular.ttf);
+}
+
+$font-regular: 14px;
+$font-large: 18px;
+$font-extralarge: 24px;
+
+.font-regular {
+    font-size: $font-regular;
+}
+
+.font-large {
+    font-size: $font-large;
+}
+
+.font-extralarge {
+    font-size: $font-extralarge;
+}
