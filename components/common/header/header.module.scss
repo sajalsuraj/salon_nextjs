@@ -1,0 +1,16 @@
+@import './../../../styles/base.scss';
+
+div.header {
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+
+    div.headerTitle {
+        font-family: "PoppinsSemiBold";
+    }
+
+    div.userTitle {
+        color: $text-dark-gray;
+    }
+}

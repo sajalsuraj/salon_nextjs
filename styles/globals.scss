@@ -18,4 +18,6 @@ body {
 
 div.right-panel {
   width: calc(100% - 250px);
+  background-color: $theme-bg;
+  padding: 18px;
 }

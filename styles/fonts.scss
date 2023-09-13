@@ -7,10 +7,15 @@
   src: local("PoppinsBold"), url(/font/Poppins-Bold.ttf);
 }
 @font-face {
+  font-family: "PoppinsSemiBold";
+  src: local("PoppinsSemiBold"), url(/font/Poppins-SemiBold.ttf);
+}
+@font-face {
   font-family: "PoppinsRegular";
   src: local("PoppinsRegular"), url(/font/Poppins-Regular.ttf);
 }
 
+$font-small: 12px;
 $font-regular: 14px;
 $font-large: 18px;
 $font-extralarge: 24px;
@@ -19,10 +24,22 @@ $font-extralarge: 24px;
     font-size: $font-regular;
 }
 
+.font-small {
+  font-size: $font-small;
+}
+
 .font-large {
     font-size: $font-large;
 }
 
 .font-extralarge {
     font-size: $font-extralarge;
+}
+
+.semibold {
+  font-family: "PoppinsSemiBold";
+}
+
+.bold {
+  font-family: "PoppinsBold";
 }
