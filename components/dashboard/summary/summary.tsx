@@ -1,8 +1,8 @@
 import Card from "./../../common/card/card";
-import Cardinfo from "./card-info";
-import Cardaction from "./card-action";
+import SummaryCardinfo from "./summary-card-info";
+import Cardaction from "../../common/card-action/card-action";
 
-/** Importing mocks */
+/** Importing mocks for temporary development */
 import { SummaryResponse } from "@/mock/response";
 import { useState } from "react";
 
@@ -10,23 +10,23 @@ export default function Summary() {
   const [summaryData] = useState(SummaryResponse);
 
   return (
-    <div className="summary flex flex-col">
-      <div className="summary-top flex mb-[20px]">
-        <div className="basis-8/12 flex gap-[16px] flex-wrap">
+    <div className="summary flex flex-col basis-3/12">
+      <div className="summary-top flex mb-[10px]">
+        <div className="basis-8/12 flex gap-[10px] flex-wrap">
           <Card classNames="basis-[48%]">
-            <Cardinfo data={summaryData.clients} />
+            <SummaryCardinfo data={summaryData.clients} />
             <Cardaction />
           </Card>
           <Card classNames="basis-[48%]">
-            <Cardinfo data={summaryData.services} />
+            <SummaryCardinfo data={summaryData.services} />
             <Cardaction />
           </Card>
           <Card classNames="basis-[48%]">
-            <Cardinfo data={summaryData.staffs} />
+            <SummaryCardinfo data={summaryData.staffs} />
             <Cardaction />
           </Card>
           <Card classNames="basis-[48%]">
-            <Cardinfo data={summaryData.appointments} />
+            <SummaryCardinfo data={summaryData.appointments} />
             <Cardaction />
           </Card>
         </div>
@@ -37,19 +37,19 @@ export default function Summary() {
           </Card>
         </div>
       </div>
-      <div className="summary-below flex gap-[16px]">
-        <Card classNames="basis-[32%]">
-          <Cardinfo data={summaryData.income} />
+      <div className="summary-below flex gap-[10px]">
+        <Card classNames="basis-[33%]">
+          <SummaryCardinfo data={summaryData.income} />
           <Cardaction />
         </Card>
 
-        <Card classNames="basis-[32%]">
-          <Cardinfo data={summaryData.products} />
+        <Card classNames="basis-[33%]">
+          <SummaryCardinfo data={summaryData.products} />
           <Cardaction />
         </Card>
 
-        <Card classNames="basis-[32%]">
-          <Cardinfo data={summaryData.enquiry} />
+        <Card classNames="basis-[33%]">
+          <SummaryCardinfo data={summaryData.enquiry} />
           <Cardaction />
         </Card>
       </div>

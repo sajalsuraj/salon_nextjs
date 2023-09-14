@@ -7,3 +7,10 @@ export type SummaryType = {
 export type SummaryResponseType = {
   [key: string]: SummaryType;
 };
+
+export type CustomerType = {
+  id: number | string;
+  name: string;
+  phone: number;
+  visits: number;
+};

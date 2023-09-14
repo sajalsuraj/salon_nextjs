@@ -1,4 +1,4 @@
-import { SummaryResponseType } from "@/types/types";
+import { CustomerType, SummaryResponseType } from "@/types/types";
 
 export const SummaryResponse: SummaryResponseType = {
   clients: {
@@ -37,3 +37,36 @@ export const SummaryResponse: SummaryResponseType = {
     image: "",
   },
 };
+
+export const CustomerResponse: CustomerType[] = [
+  {
+    id: 1,
+    name: "Sajal Suraj",
+    phone: 8210907970,
+    visits: 10,
+  },
+  {
+    id: 2,
+    name: "Kumar Gautam",
+    phone: 8210907970,
+    visits: 9,
+  },
+  {
+    id: 3,
+    name: "Navneet Dwivedi",
+    phone: 8210907970,
+    visits: 8,
+  },
+  {
+    id: 4,
+    name: "Bipul Tiwari",
+    phone: 8210907970,
+    visits: 7,
+  },
+  {
+    id: 5,
+    name: "Rahul Tiwari",
+    phone: 8210907970,
+    visits: 6,
+  },
+];

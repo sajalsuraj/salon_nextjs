@@ -5,7 +5,7 @@ interface CardInfoProps {
   data: SummaryType;
 }
 
-export default function Cardinfo({ data }: CardInfoProps) {
+export default function SummaryCardinfo({ data }: CardInfoProps) {
   return (
     <div className={`flex gap-[10px]`}>
       <div>

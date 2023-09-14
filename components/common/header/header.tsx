@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <div className={`flex justify-between items-center ${styles.header}`}>
       <div className={`font-large ${styles.headerTitle}`}>Overview</div>
-      <div className="flex items-center gap-[20px]">
+      <div className="flex items-center gap-[10px]">
         <AiOutlineBell />
         <div className="flex gap-[10px]">
           <div>
