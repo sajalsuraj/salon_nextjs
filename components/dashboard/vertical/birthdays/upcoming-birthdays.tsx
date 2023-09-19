@@ -1,12 +1,12 @@
+import VerticalCard from "../vertical-card";
 import Cardaction from "@/components/common/card-action/card-action";
 import Cardinfo from "@/components/common/card-info/card-info";
 import Card from "@/components/common/card/card";
-import styles from "./top-staffs.module.scss";
+import styles from "../vertical-card.module.scss";
 
-export default function Topstaffs() {
+export default function Upcomingbirthdays() {
   return (
-    <Card classNames="flex-col max-h-full card-shadow">
-      <h1 className="bold font-large">Top performing staffs</h1>
+    <VerticalCard cardTitle="Upcoming birthdays">
       <div className="overflow-y-auto flex flex-col gap-[10px]">
         <Card classNames={`${styles.themeBg}`}>
           <Cardinfo />
@@ -20,7 +20,15 @@ export default function Topstaffs() {
           <Cardinfo />
           <Cardaction />
         </Card>
+        <Card classNames={`${styles.themeBg}`}>
+          <Cardinfo />
+          <Cardaction />
+        </Card>
+        <Card classNames={`${styles.themeBg}`}>
+          <Cardinfo />
+          <Cardaction />
+        </Card>
       </div>
-    </Card>
+    </VerticalCard>
   );
 }

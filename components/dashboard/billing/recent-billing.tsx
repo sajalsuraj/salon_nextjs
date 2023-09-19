@@ -5,6 +5,7 @@ export default function Recentbillings() {
   const tableHeading = ["ID", "Name", "Services", "Price"];
   return (
     <Tablecard
+      classNames="max-h-full"
       cardTitle="Recent Bills"
       headings={tableHeading}
       tableData={CustomerResponse}

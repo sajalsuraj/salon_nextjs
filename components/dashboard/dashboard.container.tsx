@@ -4,10 +4,12 @@ import Recentbillings from "./billing/recent-billing";
 import Topstaffs from "./staffs/top-staffs";
 
 import styles from "./dashboard.module.scss";
+import Upcomingappointments from "./vertical/appointments/upcoming-appointment";
+import Upcomingbirthdays from "./vertical/birthdays/upcoming-birthdays";
 
 export default function Dashboard() {
   return (
-    <div className={`flex ${styles.dashboard}`}>
+    <div className={`flex ${styles.dashboard} gap-[10px]`}>
       <div className="dbLeftPanel basis-9/12 flex flex-col gap-[10px]">
         <Summary />
         <div className="flex gap-[10px] basis-4/12 max-h-fit">
@@ -28,7 +30,14 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="dbRightPanel basis-3/12"></div>
+      <div className="dbRightPanel flex flex-col basis-3/12 gap-[10px]">
+        <div className="max-h-[49%]">
+          <Upcomingappointments />
+        </div>
+        <div className="max-h-[49%]">
+          <Upcomingbirthdays />
+        </div>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import styles from "./header.module.scss";
 
 export default function Header() {
   return (
-    <div className={`flex justify-between items-center ${styles.header}`}>
+    <div className={`flex justify-between items-center ${styles.header} card-shadow`}>
       <div className={`font-large ${styles.headerTitle}`}>Overview</div>
       <div className="flex items-center gap-[10px]">
         <AiOutlineBell />

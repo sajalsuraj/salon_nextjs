@@ -9,7 +9,7 @@ interface TablecardProps {
 
 export default function Tablecard(props: TablecardProps) {
   return (
-    <Card classNames="flex-col">
+    <Card classNames="flex-col card-shadow">
       <h1 className="bold font-large">{props.cardTitle}</h1>
       <div className={`${props.classNames}`}>
         <table className="table-auto w-full">

@@ -8,7 +8,7 @@ interface CardProps {
 export default function Card({ children, classNames }: CardProps) {
   return (
     <div
-      className={`${styles.card} flex rounded-[10px] gap-[10px] basis-[48%] justify-between ${classNames}`}
+      className={`${styles.card} flex rounded-[10px] gap-[10px] justify-between ${classNames}`}
     >
       {children}
     </div>

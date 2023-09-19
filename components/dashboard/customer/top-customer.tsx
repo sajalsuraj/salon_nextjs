@@ -9,7 +9,7 @@ export default function Topcustomers() {
   const tableHeading = ["ID", "Name", "Phone", "Visits"];
   return (
     <Tablecard
-      classNames="max-h-full overflow-y-auto"
+      classNames="max-h-full"
       cardTitle="Top Customers"
       headings={tableHeading}
       tableData={CustomerResponse}
