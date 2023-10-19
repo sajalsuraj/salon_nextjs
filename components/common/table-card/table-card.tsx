@@ -24,9 +24,13 @@ export default function Tablecard(props: TablecardProps) {
             {props.tableData.map((data, idx) => {
               if (idx < 5)
                 return (
-                  <tr className="border-b">
-                    {Object.keys(data).map((key) => {
-                      return <td className="py-2.5">{data[key]}</td>;
+                  <tr className="border-b" key={idx}>
+                    {Object.keys(data).map((key, tdIdx) => {
+                      return (
+                        <td className="py-2.5" key={tdIdx}>
+                          {data[key]}
+                        </td>
+                      );
                     })}
                   </tr>
                 );

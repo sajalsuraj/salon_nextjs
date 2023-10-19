@@ -10,7 +10,7 @@ import Upcomingbirthdays from "./vertical/birthdays/upcoming-birthdays";
 export default function Dashboard() {
   return (
     <div className={`grid grid-cols-3 ${styles.dashboard} gap-4`}>
-      <div className="dbLeftPanel col-span-2 grid auto-rows-max max-h-[inherit] gap-3">
+      <div className="dbLeftPanel col-span-2 grid auto-rows-auto max-h-[inherit] gap-3">
         <Summary />
         <div className="flex gap-[10px]">
           <div className="basis-6/12">
@@ -21,7 +21,7 @@ export default function Dashboard() {
             <Recentbillings />
           </div>
         </div>
-        <div className="flex gap-[10px]">
+        <div className="flex min-h-min gap-[10px]">
           <div className="basis-6/12">
             <Topstaffs />
           </div>
