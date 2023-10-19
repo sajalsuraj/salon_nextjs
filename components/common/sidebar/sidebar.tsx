@@ -33,7 +33,7 @@ export default function Sidebar() {
             <span>Appointments</span>
           </div>
         </Link>
-        <Link href="">
+        <Link href="/clients">
           <div className={`${styles.menuItem} flex items-center gap-[5px]`}>
             <PiUsersFourFill />
             <span>Clients</span>

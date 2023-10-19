@@ -20,14 +20,17 @@ export default function Tablecard(props: TablecardProps) {
               ))}
             </tr>
           </thead>
-          <tbody>
-            {props.tableData.map((data) => (
-              <tr className="border-b">
-                {Object.keys(data).map((key) => (
-                  <td className="py-2.5">{data[key]}</td>
-                ))}
-              </tr>
-            ))}
+          <tbody className="overflow-y-auto">
+            {props.tableData.map((data, idx) => {
+              if (idx < 5)
+                return (
+                  <tr className="border-b">
+                    {Object.keys(data).map((key) => {
+                      return <td className="py-2.5">{data[key]}</td>;
+                    })}
+                  </tr>
+                );
+            })}
           </tbody>
         </table>
       </div>

@@ -1,0 +1,15 @@
+@import './../../../styles/base.scss';
+
+button.btnPrimary {
+    background-color: $theme-color;
+    color: $white-color;
+}
+
+button.btnDanger {
+    background-color: red;
+    color: $white-color;
+}
+
+button.btnOutline {
+    border: 1px solid #000;
+}

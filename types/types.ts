@@ -13,4 +13,5 @@ export type CustomerType = {
   name: string;
   phone: number;
   visits: number;
+  gender: string;
 };

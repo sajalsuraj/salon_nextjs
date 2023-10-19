@@ -1,6 +1,6 @@
-import Card from "./../../common/card/card";
+import Card from "../../../components/common/card/card";
 import SummaryCardinfo from "./summary-card-info";
-import Cardaction from "../../common/card-action/card-action";
+import Cardaction from "../../../components/common/card-action/card-action";
 
 /** Importing mocks for temporary development */
 import { SummaryResponse } from "@/mock/response";
@@ -10,7 +10,7 @@ export default function Summary() {
   const [summaryData] = useState(SummaryResponse);
 
   return (
-    <div className="summary flex flex-col gap-[10px] basis-3/12">
+    <div className="summary flex flex-col gap-[10px]">
       <div className="summary-top flex gap-[10px]">
         <div className="basis-8/12 flex gap-[10px] flex-wrap">
           <Card classNames="basis-[49%] card-shadow">

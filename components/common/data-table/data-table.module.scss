@@ -1,0 +1,13 @@
+input.pageNumber::-webkit-outer-spin-button,
+input.pageNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.pageNumber {
+  -moz-appearance: textfield;
+  width: 30px;
+  border: 1px solid #000;
+  text-align: center;
+}
