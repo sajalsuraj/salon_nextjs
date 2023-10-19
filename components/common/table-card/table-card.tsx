@@ -15,8 +15,10 @@ export default function Tablecard(props: TablecardProps) {
         <table className="table-auto w-full">
           <thead>
             <tr className="border-t border-b">
-              {props.headings.map((title) => (
-                <th className="text-left semibold py-2">{title}</th>
+              {props.headings.map((title, idx) => (
+                <th className="text-left semibold py-2" key={idx}>
+                  {title}
+                </th>
               ))}
             </tr>
           </thead>
