@@ -15,3 +15,11 @@ export type CustomerType = {
   visits: number;
   gender: string;
 };
+
+export type StaffsType = {
+  id: number | string;
+  name: string;
+  phone: number;
+  services_done: number;
+  gender: string;
+};

@@ -39,7 +39,7 @@ export default function Sidebar() {
             <span>Clients</span>
           </div>
         </Link>
-        <Link href="">
+        <Link href="/staffs">
           <div className={`${styles.menuItem} flex items-center gap-[5px]`}>
             <FaUserTie />
             <span>Staffs</span>

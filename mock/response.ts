@@ -1,4 +1,4 @@
-import { CustomerType, SummaryResponseType } from "@/types/types";
+import { CustomerType, SummaryResponseType, StaffsType } from "@/types/types";
 
 export const SummaryResponse: SummaryResponseType = {
   clients: {
@@ -108,5 +108,22 @@ export const CustomerResponse: CustomerType[] = [
     gender: "Male",
     phone: 8210907970,
     visits: 6,
+  },
+];
+
+export const StaffsResponse: StaffsType[] = [
+  {
+    id: 1,
+    name: "Sajal Suraj",
+    gender: "Male",
+    phone: 8210907970,
+    services_done: 10,
+  },
+  {
+    id: 2,
+    name: "Kumar Gautam",
+    gender: "Male",
+    phone: 8210907970,
+    services_done: 10,
   },
 ];
